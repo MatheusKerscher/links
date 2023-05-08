@@ -10,7 +10,7 @@ async function share() {
   const shareData = {
     title: "Matheus Kerscher | Developer",
     text: "Descubra mais sobre mim accesando o link abaixo :)",
-    url: "",
+    url: "https://matheuskerscher.github.io/links/",
   };
 
   try {

@@ -9,7 +9,7 @@ function addAnimation(id) {
 async function share() {
   const shareData = {
     title: "Matheus Kerscher | Developer",
-    text: "Descubra mais sobre mim accesando o link abaixo :)",
+    text: "Descubra mais sobre mim accesando o link :)",
     url: "https://matheuskerscher.github.io/links/",
   };
 

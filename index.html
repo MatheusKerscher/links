@@ -5,116 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <script defer src="js/index.js"></script>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="src/css/style.css" />
 
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- google fonts -->
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap"
       rel="stylesheet"
     />
 
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/3fcbaa0644.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <link rel="shortcut icon" href="assets/imgs/icone-site.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="src/assets/icons/icon-link.ico"
+      type="image/x-icon"
+    />
 
     <title>Matheus Kerscher | Links</title>
   </head>
   <body class="container-fluid">
-    <main>
-      <div class="container-share">
-        <button class="btn-share" onclick="share()">
-          <i id="icon-share" class="fa-solid fa-share-nodes fa-beat"></i>
-        </button>
+    <header class="header">
+      <div class="header__infos">
+        <img
+          class="header__infos__img"
+          src="src/assets/imgs/perfil.png"
+          alt="Foto de Matheus Kerscher"
+        />
+        <h1 class="header__infos__name">Matheus Kerscher</h1>
       </div>
-      <div>
-        <div class="text-center">
+
+      <div class="header__social-media">
+        <a
+          href="https://www.instagram.com/matheuskerscher/"
+          target="_blank"
+          class="header__social-media__item"
+        >
           <img
-            class="img-perfil"
-            src="assets/imgs/perfil.png"
-            width="160"
-            alt="Foto de Matheus Kerscher"
+            class="header__social-media__img"
+            src="src/assets/icons/icon-instagram.svg"
+            alt="Logo Instagram"
           />
-          <h2 class="text-white">Matheus Kerscher</h2>
-        </div>
-
-        <div class="text-center">
-          <a
-            href="https://www.instagram.com/matheuskerscher/"
-            target="_blank"
-            class="text-white link-header"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </div>
+        </a>
       </div>
+    </header>
 
-      <div class="row">
-        <div class="col-12">
+    <main class="main">
+      <section class="social-media">
+        <article class="social-media__item">
           <a
-            onmouseenter="addAnimation('icon-linkedin')"
-            onmouseleave="addAnimation('icon-linkedin')"
-            class="link-main"
+            class="social-media__link"
+            href="#"
+            target="_blank"
+          >
+            <div class="social-media__card">
+              <img
+                class="social-media__card__img"
+                src="src/assets/icons/icon-code.svg"
+                alt="Fechamento de tag HTML"
+              />
+              <p class="social-media__card__title">Portifólio</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="social-media__item">
+          <a
+            class="social-media__link"
             href="https://www.linkedin.com/in/matheus-kerscher/"
             target="_blank"
           >
-            <div class="card-link-main">
-              <i id="icon-linkedin" class="fa-brands fa-linkedin me-2"></i>
-              <span> LinkedIn </span>
+            <div class="social-media__card">
+              <img
+                class="social-media__card__img"
+                src="src/assets/icons/icon-linkedin.svg"
+                alt="Logo LinkedIn"
+              />
+              <p class="social-media__card__title">LinkedIn</p>
             </div>
           </a>
-        </div>
+        </article>
 
-        <div class="col-12 my-4">
+        <article class="social-media__item">
           <a
-            onmouseenter="addAnimation('icon-github')"
-            onmouseleave="addAnimation('icon-github')"
-            class="link-main"
+            class="social-media__link"
             href="https://github.com/MatheusKerscher"
             target="_blank"
           >
-            <div class="card-link-main">
-              <i id="icon-github" class="fa-brands fa-github me-2"></i>
-              <span> Git Hub </span>
+            <div class="social-media__card">
+              <img
+                class="social-media__card__img"
+                src="src/assets/icons/icon-github.svg"
+                alt="Logo GitHub"
+              />
+              <p class="social-media__card__title">GitHub</p>
             </div>
           </a>
-        </div>
+        </article>
 
-        <div class="col-12">
+        <article class="social-media__item">
           <a
-            onmouseenter="addAnimation('icon-email')"
-            onmouseleave="addAnimation('icon-email')"
-            class="link-main"
-            href="mailto: matheuskerscher@outlook.com"
+            class="social-media__link"
+            href="mailto:matheuskerscher@outlook.com"
             target="_blank"
           >
-            <div class="card-link-main">
-              <i id="icon-email" class="fa-regular fa-envelope me-2"></i>
-              <span> Entar em contato </span>
+            <div class="social-media__card">
+              <img
+                class="social-media__card__img"
+                src="src/assets/icons/icon-email.svg"
+                alt="Logo GitHub"
+              />
+              <p class="social-media__card__title">Entrar em contato</p>
             </div>
           </a>
-        </div>
-      </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>
